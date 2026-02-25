@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<title>German Pomares Ordoñez</title>
+
+<style>
+body {
+  background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(170, 3, 3));
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: rgb(249, 248, 248);
+  text-align: center;
+}
+
+h2 {
+  color: #fefdfd;
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+}
+
+button {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: rgb(29, 4, 129);
+  border: 2px solid rgb(252, 251, 251);
+}
+</style>
+
+</head>
+
+<body>
+
+<script>
+function mostrarFoto(num){
+  if(num === 1) document.getElementById('foto').src = "foto1.jpg";
+  if(num === 2) document.getElementById('foto').src = "foto2.jpg";
+  if(num === 3) document.getElementById('foto').src = "foto3.jpg";
+}
+</script>
+
+<div style="text-align:center; margin-bottom:20px;">
+
+<button onclick="location.href='#bio'">Biografia</button>
+
+<button onclick="location.href='#datos'">Datos</button>
+
+<button onclick="location.href='#video'">Video</button>
+
+</div>
+
+
+<h1>German Pomares Ordoñez</h1>
+
+<p>Héroe y mártir de Nicaragua</p>
+
+<img src="german.jpg"
+     style="float: right; height: 400px; margin: 10px;">
+
+ <h2 id="bio"Biografia</h2>
+ 
+
+<p>German Pomares Ordoñez, conocido entrañablemente como "El Danto", es una de las figuras mas emblematicas de la historia revolucionaria de nicaragua.
+ Su vida representa el vinculo entre el campesinado Nicaraguense y la lucha armada que derroco a la dictadura de los Somozas.</p>
+
+<h2 id="datos">Datos</h2>
+
+ <ul>
+    <li>Nacimiento: 17 de agosto de 1937, en El viejo , Chinandega.</li>
+    <li>Fallecimento: 24 de mayo de 1979, en jinotega.</li>
+    <li>Origen: Proveniente de una familia trabajadora del campo, lo que marco su sensibilidad ante las injusticias sociales de la epoca.</li>
+ 
+
+<h2>Trayectoria guerrillera</h2>
+
+<P>Pomares no solo fue un soldado;<br>
+fue un estratega y un organizador fundamental<br>
+para el Frente Sandinista de Liberacion Nacional (FSLN)</P>
+
+<p>1.<strong>Fundacion del FSLN</strong>:Fue uno de los miembros fundadores<br>
+del frente en 1961, junto a figuras como Carlos Fonseca, Tomas Borge y Silvio Mayorga.</p>
+
+<p>2.<strong>Experiencia Militar</strong>:Recibio entrenamiento militar en Cuba<br>
+a principios de los años 60, conocimientos que luego aplico para organizar<br>
+las primeras columnas guerrilleras en las montañas de Nicaragua.</p>
+
+<p>3.<strong>Acciones Clave</strong>:Participo en la historica toma de la casa de Chema Castillo<br>
+en 1974 y lidero el Frente Norte "Carlos Fonseca", ganandose el respeto de sus tropas por su valentia y humildad.</p>
+
+<h2>Galería histórica</h2>
+
+<button onclick="mostrarFoto(1)">Foto 1</button>
+<button onclick="mostrarFoto(2)">Foto 2</button>
+<button onclick="mostrarFoto(3)">Foto 3</button>
+
+<img id="foto" src="" style="margin-top:10px; width:400px; display:block;">
+
+<h2>Su Caida y Legado</h2>
+
+<p>Murio en combate durante la toma del cerro La Cruz, en jinotega, apenas unas semanas antes del triunfo de la Revolucion el 19 de Julio de 1979<br>
+Sus ultimas palabras, segun la narrativa historica, instaban a sus compañeros a seguir adelante con la lucha.</p>
+
+     <p><strong>Dato Curioso</strong>:Su apodo, "El Danto", hace referencia a la danta o tapir, un animal fuerte y sigiloso<br>
+     de la selva centroamericana, cualidades que sus compañeros venia reflejadas en su destreza en la montaña.</p>
+
+     <h2 id="video"Legado del CMDT.German Pomares</h2>
+
+<video width="700" controls>
+  <source src="video.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+
+<button onclick="mostrarSecreto()">Dato curioso</button>
+
+<p id="secreto" style="display:none; margin-top:10px;">
+Germán Pomares era un apasionado del béisbol, el deporte rey de Nicaragua. Se dice que, incluso en los campamentos guerrilleros, buscaba formas de mantenerse al tanto de los resultados o jugaba con sus compañeros cuando el contexto lo permitía. Por esta razón, el Campeonato Nacional de Béisbol Superior (el más importante del país) lleva su nombre en su honor..
+</p>
+
+<script>
+function mostrarSecreto() {
+  var x = document.getElementById("secreto");
+  if(x.style.display === "none"){
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+<p style="margin-top:50px; text-align:center; color:gray; font-size:14px;">
+    Hecho para proyecto - Curso de Identidad Nacional, ingenieria en Sistemas
+</p>
+
+</html>
+
+</body>
